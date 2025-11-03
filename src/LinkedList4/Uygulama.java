@@ -6,6 +6,7 @@ public class Uygulama {
     list.basaekle(5);
     list.basaekle(6);
     list.basaekle(7);
+    list.sonaekle(9);
 
     list.yazdir();;
     }

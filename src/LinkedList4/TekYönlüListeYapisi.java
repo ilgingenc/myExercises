@@ -20,7 +20,7 @@ public class TekYönlüListeYapisi {
         }
     }
 
-    void sonekle(int x) {
+    void sonaekle(int x) {
         Node eleman = new Node();
         eleman.data = x;
 
@@ -35,6 +35,43 @@ public class TekYönlüListeYapisi {
             tail = eleman;
         }
 
+    }
+
+    void bastansil(){
+        if (head==null){
+            System.out.println("liste yapısı boş.");
+        }
+        else if (head.next==null){
+            head = null;
+            tail= null;
+            System.out.println("listedeki tek eleman silindi.");
+        }
+        else{
+            head=head.next;
+            System.out.println("baştaki eleman silindi.");
+        }
+    }
+
+    void sondansil(){
+        if (head==null){
+            System.out.println("liste yapısı boş.");
+        }
+        else if (head.next==null){
+            head = null;
+            tail= null;
+            System.out.println("listedeki tek eleman silindi.");
+        }
+        else{
+            Node temp = head;
+
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+
+            System.out.println("Silinen eleman: " + tail.data);
+            temp.next = null;
+            tail = temp;
+        }
     }
 
 
