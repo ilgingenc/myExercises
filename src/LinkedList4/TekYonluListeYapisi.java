@@ -1,6 +1,6 @@
 package LinkedList4;
 
-public class TekYönlüListeYapisi {
+public class TekYonluListeYapisi {
     Node head = null;
     Node tail = null;
 
