@@ -4,7 +4,7 @@ public class Akademisyen extends Calisan {
     String bolum, gorevler;
     String dersler;
 
-    public void derseGir() {
+    public void giris() {
         System.out.println("derse girildi.");}
 
         public Akademisyen(String adSoyad, String eposta, String telefon, String bolum, String gorevler, String dersler)
