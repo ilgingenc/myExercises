@@ -4,9 +4,9 @@ public class TekYonluListeYapisi {
     Node head = null;
     Node tail = null;
 
-    void basaekle(int x) {
-        Node eleman = new Node();
-        eleman.data = x;
+    void basaekle(int data) {
+        Node eleman = new Node(data);
+
 
         if (head == null) {
             eleman.next = null;
@@ -20,9 +20,9 @@ public class TekYonluListeYapisi {
         }
     }
 
-    void sonaekle(int x) {
-        Node eleman = new Node();
-        eleman.data = x;
+    void sonaekle(int data) {
+        Node eleman = new Node(data);
+
 
         if (head == null) {
             eleman.next = null;
